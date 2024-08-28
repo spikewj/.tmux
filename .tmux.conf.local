@@ -395,6 +395,9 @@ bind-key C-a last-window
 bind n next-window
 bind p previous-window
 
+set -g base-index 0           # start windows numbering at 0
+setw -g pane-base-index 0     # make pane numbering consistent with windows
+
 # if you don't want Oh my tmux! to alter a binding, use #!important
 # bind c new-window -c '#{pane_current_path}' #!important
 
